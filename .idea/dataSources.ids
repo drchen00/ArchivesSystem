@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - archivesSystem@localhost" uuid="fd7d7303-1142-42ac-b430-86c5c0f9e96f">
+    <database-info product="MySQL" version="5.7.12-0ubuntu1.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="archivesSystem"/>
+      <table id="2" parent="1" name="Account"/>
+      <table id="3" parent="1" name="ActionDict"/>
+      <table id="4" parent="1" name="ArchiveTrace"/>
+      <table id="5" parent="1" name="ArchiveTraceHistory"/>
+      <table id="6" parent="1" name="Archives"/>
+      <table id="7" parent="1" name="ArchivesHistory"/>
+      <table id="8" parent="1" name="ArchivesStatusDict"/>
+      <table id="9" parent="1" name="Tags"/>
+      <table id="10" parent="1" name="CheckResults"/>
+      <table id="11" parent="1" name="CheckConditionsDict"/>
+      <table id="12" parent="1" name="ExceptionInfoDict"/>
+      <table id="13" parent="1" name="CheckRecords"/>
+      <column id="14" parent="2" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="15" parent="2" name="Account">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <column id="16" parent="2" name="Password">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <column id="17" parent="2" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="18" parent="2" name="Account_Account_uindex">
+        <columns>Account</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="19" parent="2" name="Account_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="20" parent="2" name="Account_Account_uindex">
+        <columns>Account</columns>
+        <underlying-index>Account_Account_uindex</underlying-index>
+      </key>
+      <key id="21" parent="2" name="Account_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>Account_ID_uindex</underlying-index>
+      </key>
+      <key id="22" parent="2" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="23" parent="3" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="24" parent="3" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="25" parent="3" name="Status_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="26" parent="3" name="Status_Status_uindex">
+        <columns>Name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="27" parent="3" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="28" parent="3" name="Status_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>Status_ID_uindex</underlying-index>
+      </key>
+      <key id="29" parent="3" name="Status_Status_uindex">
+        <columns>Name</columns>
+        <underlying-index>Status_Status_uindex</underlying-index>
+      </key>
+      <column id="30" parent="4" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="31" parent="4" name="ArchiveNum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="32" parent="4" name="Action">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="33" parent="4" name="Time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="34" parent="4" name="UserID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="35" parent="4" name="ArchiveTrace_Account_ID_fk">
+        <columns>UserID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="36" parent="4" name="ArchiveTrace_ActionDict_ID_fk">
+        <columns>Action</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="37" parent="4" name="ArchiveTrace_Archives_ArchiveNum_fk">
+        <columns>ArchiveNum</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="38" parent="4" name="ArchiveTrace_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="39" parent="4" name="ArchiveTrace_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>ArchiveTrace_ID_uindex</underlying-index>
+      </key>
+      <key id="40" parent="4" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="41" parent="4" name="ArchiveTrace_Account_ID_fk">
+        <columns>UserID</columns>
+        <ref-key>~.Account.Account_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="42" parent="4" name="ArchiveTrace_ActionDict_ID_fk">
+        <columns>Action</columns>
+        <ref-key>~.ActionDict.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="43" parent="4" name="ArchiveTrace_Archives_ArchiveNum_fk">
+        <columns>ArchiveNum</columns>
+        <ref-key>~.Archives.Archives_Num_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="44" parent="5" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="45" parent="5" name="ArchiveNum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="46" parent="5" name="Action">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="47" parent="5" name="Time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="48" parent="5" name="UserID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="49" parent="5" name="ArchiveTraceHistory_Account_ID_fk">
+        <columns>UserID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="50" parent="5" name="ArchiveTraceHistory_ActionDict_ID_fk">
+        <columns>Action</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="51" parent="5" name="ArchiveTraceHistory_ArchivesHistory_ArchiveNum_fk">
+        <columns>ArchiveNum</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="52" parent="5" name="ArchiveTraceHistory_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="53" parent="5" name="ArchiveTraceHistory_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>ArchiveTraceHistory_ID_uindex</underlying-index>
+      </key>
+      <key id="54" parent="5" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="55" parent="5" name="ArchiveTraceHistory_Account_ID_fk">
+        <columns>UserID</columns>
+        <ref-key>~.Account.Account_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="56" parent="5" name="ArchiveTraceHistory_ActionDict_ID_fk">
+        <columns>Action</columns>
+        <ref-key>~.ActionDict.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="57" parent="5" name="ArchiveTraceHistory_ArchivesHistory_ArchiveNum_fk">
+        <columns>ArchiveNum</columns>
+        <ref-key>~.ArchivesHistory.ArchivesHistory_ArchiveNum_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="58" parent="6" name="ArchiveNum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="59" parent="6" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <column id="60" parent="6" name="TagNum">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <column id="61" parent="6" name="Status">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="62" parent="6" name="CreatedTime">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="63" parent="6" name="Archives_ArchivesStatusDict_ID_fk">
+        <columns>Status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="64" parent="6" name="Archives_Name_uindex">
+        <columns>Name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="65" parent="6" name="Archives_Num_uindex">
+        <columns>ArchiveNum</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="66" parent="6" name="Archives_TagNum_uindex">
+        <columns>TagNum</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="67" parent="6" name="Archives_Name_uindex">
+        <columns>Name</columns>
+        <underlying-index>Archives_Name_uindex</underlying-index>
+      </key>
+      <key id="68" parent="6" name="Archives_Num_uindex">
+        <columns>ArchiveNum</columns>
+        <underlying-index>Archives_Num_uindex</underlying-index>
+      </key>
+      <key id="69" parent="6" name="Archives_TagNum_uindex">
+        <columns>TagNum</columns>
+        <underlying-index>Archives_TagNum_uindex</underlying-index>
+      </key>
+      <key id="70" parent="6" name="PRIMARY">
+        <columns>ArchiveNum</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="71" parent="6" name="Archives_ArchivesStatusDict_ID_fk">
+        <columns>Status</columns>
+        <ref-key>~.ArchivesStatusDict.ArchivesStatusDict_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="72" parent="6" name="Archives_Tags_TagNum_fk">
+        <columns>TagNum</columns>
+        <ref-key>~.Tags.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="73" parent="7" name="ArchiveNum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="74" parent="7" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="75" parent="7" name="ArchivesHistory_ArchiveNum_uindex">
+        <columns>ArchiveNum</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="76" parent="7" name="ArchivesHistory_ArchiveNum_uindex">
+        <columns>ArchiveNum</columns>
+        <underlying-index>ArchivesHistory_ArchiveNum_uindex</underlying-index>
+      </key>
+      <key id="77" parent="7" name="PRIMARY">
+        <columns>ArchiveNum</columns>
+        <primary>1</primary>
+      </key>
+      <column id="78" parent="8" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="79" parent="8" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="80" parent="8" name="ArchivesStatusDict_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="81" parent="8" name="ArchivesStatusDict_Name_uindex">
+        <columns>Name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="82" parent="8" name="ArchivesStatusDict_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>ArchivesStatusDict_ID_uindex</underlying-index>
+      </key>
+      <key id="83" parent="8" name="ArchivesStatusDict_Name_uindex">
+        <columns>Name</columns>
+        <underlying-index>ArchivesStatusDict_Name_uindex</underlying-index>
+      </key>
+      <key id="84" parent="8" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="85" parent="9" name="TagNum">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="86" parent="9" name="Tag_Num_uindex">
+        <columns>TagNum</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="87" parent="9" name="PRIMARY">
+        <columns>TagNum</columns>
+        <primary>1</primary>
+      </key>
+      <key id="88" parent="9" name="Tag_Num_uindex">
+        <columns>TagNum</columns>
+        <underlying-index>Tag_Num_uindex</underlying-index>
+      </key>
+      <column id="89" parent="10" name="CheckID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="90" parent="10" name="TagNum">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <column id="91" parent="10" name="ExceptionInfo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="92" parent="10" name="CheckResults_ExceptionInfoDict_ID_fk">
+        <columns>ExceptionInfo</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="93" parent="10" name="CheckResults_Tags_TagNum_fk">
+        <columns>TagNum</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="94" parent="10" name="PRIMARY">
+        <columns>CheckID
+TagNum</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="95" parent="10" name="CheckResults_CheckRecord_ID_fk">
+        <columns>CheckID</columns>
+        <ref-key>~.CheckRecords.CheckRecord_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="96" parent="10" name="CheckResults_ExceptionInfoDict_ID_fk">
+        <columns>ExceptionInfo</columns>
+        <ref-key>~.ExceptionInfoDict.ExceptionInfoDict_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="97" parent="10" name="CheckResults_Tags_TagNum_fk">
+        <columns>TagNum</columns>
+        <ref-key>~.Tags.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="98" parent="11" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="99" parent="11" name="Type">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="100" parent="11" name="CheckConditions_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="101" parent="11" name="CheckConditions_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>CheckConditions_ID_uindex</underlying-index>
+      </key>
+      <key id="102" parent="11" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="103" parent="12" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="104" parent="12" name="Type">
+        <mandatory>1</mandatory>
+        <data-type>char(45)</data-type>
+      </column>
+      <index id="105" parent="12" name="ExceptionInfoDict_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="106" parent="12" name="ExceptionInfoDict_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>ExceptionInfoDict_ID_uindex</underlying-index>
+      </key>
+      <key id="107" parent="12" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="108" parent="13" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="109" parent="13" name="CheckCondition">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="110" parent="13" name="CheckContent">
+        <mandatory>1</mandatory>
+        <data-type>char(128)</data-type>
+      </column>
+      <column id="111" parent="13" name="UserID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="112" parent="13" name="StartTime">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="113" parent="13" name="EndTime">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="114" parent="13" name="CheckRecord_Account_ID_fk">
+        <columns>UserID</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="115" parent="13" name="CheckRecord_CheckConditionsDict_ID_fk">
+        <columns>CheckCondition</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="116" parent="13" name="CheckRecord_ID_uindex">
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="117" parent="13" name="CheckRecord_ID_uindex">
+        <columns>ID</columns>
+        <underlying-index>CheckRecord_ID_uindex</underlying-index>
+      </key>
+      <key id="118" parent="13" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="119" parent="13" name="CheckRecord_Account_ID_fk">
+        <columns>UserID</columns>
+        <ref-key>~.Account.Account_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="120" parent="13" name="CheckRecord_CheckConditionsDict_ID_fk">
+        <columns>CheckCondition</columns>
+        <ref-key>~.CheckConditionsDict.CheckConditions_ID_uindex</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>

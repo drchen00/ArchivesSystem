@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/archivesSystem</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">pzy</property>
+        <mapping class="com.hibernate.AccountEntity"/>
+        <mapping class="com.hibernate.ActionDictEntity"/>
+        <mapping class="com.hibernate.ArchiveTraceEntity"/>
+        <mapping class="com.hibernate.ArchiveTraceHistoryEntity"/>
+        <mapping class="com.hibernate.ArchivesEntity"/>
+        <mapping class="com.hibernate.ArchivesHistoryEntity"/>
+        <mapping class="com.hibernate.ArchivesStatusDictEntity"/>
+        <mapping class="com.hibernate.TagsEntity"/>
+        <mapping class="com.hibernate.CheckResultsEntity"/>
+        <mapping class="com.hibernate.CheckConditionsDictEntity"/>
+        <mapping class="com.hibernate.ExceptionInfoDictEntity"/>
+        <mapping class="com.hibernate.CheckRecordsEntity"/>
+        <!--<property name="show_sql">true</property>-->
+        <!-- DB schema will be updated if needed -->
+    </session-factory>
+</hibernate-configuration>

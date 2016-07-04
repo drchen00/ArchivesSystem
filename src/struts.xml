@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="json" extends="json-default">
+        <interceptors>
+            <interceptor-stack name="jsonStack">
+                <interceptor-ref name="json">
+                    <param name="enableSMD">true</param>
+                </interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <global-results>
+            <result name="error">500.html</result>
+        </global-results>
+
+        <action name="login" class="com.action.LoginAction">
+            <result name="success">index.jsp</result>
+            <result name="fail">login.html</result>
+        </action>
+        <action name="logout" class="com.action.LogoutAction">
+            <result>login.html</result>
+        </action>
+        <action name="register" class="com.action.RegisterAction">
+            <result>register-success.html</result>
+        </action>
+        <action name="get_tags" class="com.action.GetTagsAction">
+            <interceptor-ref name="jsonStack"/>
+            <result type="json"/>
+        </action>
+        <action name="get_archives" class="com.action.GetArchivesAction">
+            <interceptor-ref name="jsonStack"/>
+            <result type="json"/>
+        </action>
+        <action name="get_archive" class="com.action.validate.CheckTagNumAction">
+            <result type="json"/>
+        </action>
+        <action name="get_check_records" class="com.action.GetCheckRecordsAction">
+            <interceptor-ref name="jsonStack"/>
+            <result type="json"/>
+        </action>
+        <action name="get_check_results" class="com.action.GetCheckResultsAction">
+            <interceptor-ref name="jsonStack"/>
+            <result type="json"/>
+        </action>
+        <action name="check_archive_name_existed" class="com.action.validate.CheckArchiveNameExistedAction">
+            <result type="json">
+                <param name="root">inexistent</param>
+            </result>
+        </action>
+        <action name="check_archive_num_existed" class="com.action.validate.CheckArchiveNumExistedAction">
+            <result type="json">
+                <param name="root">inexistent</param>
+            </result>
+        </action>
+        <action name="check_tag_unused" class="com.action.validate.CheckTagNumAction">
+            <result type="json">
+                <param name="root">unused</param>
+            </result>
+        </action>
+        <action name="check_tag_used" class="com.action.validate.CheckTagNumAction">
+            <result type="json">
+                <param name="root">used</param>
+            </result>
+        </action>
+        <action name="check_archive_in_store" class="com.action.validate.CheckArchiveStatusAction">
+            <result type="json">
+                <param name="root">inStore</param>
+            </result>
+        </action>
+        <action name="check_archive_on_loan" class="com.action.validate.CheckArchiveStatusAction">
+            <result type="json">
+                <param name="root">onLoan</param>
+            </result>
+        </action>
+        <action name="check_register_account_inexistent" class="com.action.validate.CheckRegisterAccountAction">
+            <result type="json">
+                <param name="root">inexistent</param>
+            </result>
+        </action>
+        <action name="check_register_id_inexistent" class="com.action.validate.CheckRegisterIDAction">
+            <result type="json">
+                <param name="root">inexistent</param>
+            </result>
+        </action>
+        <action name="add_archive" class="com.action.AddArchiveAction">
+            <result>archive-stock.jsp</result>
+        </action>
+        <action name="update_archive" class="com.action.UpdateArchiveAction">
+            <result>archive-query.jsp</result>
+        </action>
+        <action name="loan_archive" class="com.action.LoanArchiveAction">
+            <result>archive-loan.jsp</result>
+        </action>
+        <action name="return_archive" class="com.action.ReturnArchiveAction">
+            <result>archive-return.jsp</result>
+        </action>
+        <action name="destroy_archive" class="com.action.DestroyArchiveAction">
+            <result>archive-destroy.jsp</result>
+        </action>
+    </package>
+</struts>
