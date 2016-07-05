@@ -6,6 +6,7 @@ package com.action;
  */
 
 import com.Constants;
+import com.bean.UserBean;
 import com.hibernate.AccountEntity;
 import com.opensymphony.xwork2.ActionContext;
 import org.hibernate.Query;
@@ -48,17 +49,11 @@ public class LoginAction {
         Transaction transaction = hsession.beginTransaction();
         if (name != null && !"".equals(name)) {
             Query query = hsession.createQuery("from AccountEntity where account='" + name + "' and password='" + psw + "'");
-            AccountEntity user = (AccountEntity) query.uniqueResult();
+            AccountEntity account = (AccountEntity) query.uniqueResult();
             transaction.commit();
-            if (user != null) {
-                Map<String, Object> newSession = ActionContext.getContext().getSession();
-                Map oldSession = Constants.getOnlineUser().get(user.getId());
-                if (oldSession != null) {
-                    oldSession.clear();
-                }
-                Constants.getOnlineUser().put(user.getId(), newSession);
-                newSession.put(Constants.getUserName(), user.getName());
-                newSession.put(Constants.getUserID(), user.getId());
+            if (account != null) {
+                UserBean user = new UserBean(account.getId(), account.getName());
+                user.login();
                 flag = "success";
             } else {
                 errInfo = "用户名密码不匹配";

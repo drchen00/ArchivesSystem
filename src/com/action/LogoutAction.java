@@ -1,6 +1,7 @@
 package com.action;
 
 import com.Constants;
+import com.bean.UserBean;
 import com.opensymphony.xwork2.ActionContext;
 
 import java.util.Map;
@@ -10,9 +11,8 @@ import java.util.Map;
  */
 public class LogoutAction {
     public String execute() throws Exception {
-        Map session = ActionContext.getContext().getSession();
-        Constants.getOnlineUser().remove(session.get(Constants.getUserID()));
-        session.clear();
+        UserBean user = UserBean.getCurrentUser();
+        user.logout();
         return "success";
     }
 }
