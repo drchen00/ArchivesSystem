@@ -6,31 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5888ebe3-0dd8-4f0c-9b41-c1beadcc4dab" name="Default" comment="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/success.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/register-success.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/register-success.html" afterPath="$PROJECT_DIR$/web/success.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/Constants.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/OnlineUserListener.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/OnlineUserListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/action/LoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/action/LogoutAction.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/action/LogoutAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/bean/UserBean.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/bean/UserBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/com/Constants.class" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/com/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/com/OnlineUserListener.class" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/com/OnlineUserListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/com/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/com/action/LoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/com/action/LogoutAction.class" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/com/action/LogoutAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/com/bean/UserBean.class" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/com/bean/UserBean.class" />
+    <list default="true" id="5888ebe3-0dd8-4f0c-9b41-c1beadcc4dab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/500.html" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/struts.xml" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/Constants.java" afterPath="$PROJECT_DIR$/src/com/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/OnlineUserListener.java" afterPath="$PROJECT_DIR$/src/com/OnlineUserListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/com/action/LoginAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/action/LogoutAction.java" afterPath="$PROJECT_DIR$/src/com/action/LogoutAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/UserBean.java" afterPath="$PROJECT_DIR$/src/com/bean/UserBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/500.html" afterPath="$PROJECT_DIR$/web/500.html" />
     </list>
     <ignored path="BoostrapTheme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -240,7 +217,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="-1301" />
     <option name="y" value="24" />
     <option name="width" value="1301" />
     <option name="height" value="744" />
@@ -523,6 +500,22 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="98" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="104" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="947" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="98" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="99" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="952" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
@@ -1065,27 +1058,35 @@
       <workItem from="1467627720144" duration="160000" />
       <workItem from="1467627906640" duration="1157000" />
       <workItem from="1467629817909" duration="22000" />
-      <workItem from="1467701718395" duration="13575000" />
+      <workItem from="1467701718395" duration="14235000" />
     </task>
+    <task id="LOCAL-00001" summary="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。">
+      <created>1467717111302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1467717111302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419882000" />
+    <option name="totallyTimeSpent" value="420542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1301" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866043" sideWeight="0.5371703" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.5371703" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3520249" sideWeight="0.42366108" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933652" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1601,17 +1602,17 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="javaee-facet-resources" />
               <type id="jpa-descriptors" />
               <type id="library" />
               <type id="artifact" />
+              <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
           <last-edited>ArchivesSystem:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2306163" />
+                <option value="0.33101392" />
                 <option value="0.5" />
               </list>
             </option>
