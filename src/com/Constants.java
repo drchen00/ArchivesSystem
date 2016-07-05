@@ -27,11 +27,6 @@ public class Constants {
     private static final Map CHECK_CONDITIONS_DICT = queryCheckConditions();
     private static final Map EXCEPTION_INFO_DICT = queryExceptionInfoDict();
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//    private static Map<Integer, Map> onlineUser = new HashMap<>();
-
-//    public static Map<Integer, Map> getOnlineUser() {
-//        return onlineUser;
-//    }
 
     public static String getUserID() {
         return USER_ID;
