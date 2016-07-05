@@ -1055,7 +1055,7 @@
       <workItem from="1467627906640" duration="1157000" />
       <workItem from="1467629817909" duration="22000" />
       <workItem from="1467701718395" duration="14235000" />
-      <workItem from="1467718305758" duration="596000" />
+      <workItem from="1467718305758" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。">
       <created>1467717111302</created>
@@ -1078,11 +1078,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467718888333</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。">
+      <created>1467718926640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467718926640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="421138000" />
+    <option name="totallyTimeSpent" value="421170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
