@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5888ebe3-0dd8-4f0c-9b41-c1beadcc4dab" name="Default" comment="">
+    <list default="true" id="5888ebe3-0dd8-4f0c-9b41-c1beadcc4dab" name="Default" comment="Merge branch 'UpdateBaseHTTP'&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BoostrapTheme.iws" />
@@ -36,7 +36,20 @@
     <favorites_list name="BoostrapTheme" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bean/UserBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-201">
+              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -401,8 +414,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -981,6 +994,7 @@
       <workItem from="1467629817909" duration="22000" />
       <workItem from="1467701718395" duration="14235000" />
       <workItem from="1467718305758" duration="811000" />
+      <workItem from="1467720113016" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。">
       <created>1467717111302</created>
@@ -1017,11 +1031,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467718948420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'UpdateBaseHTTP'&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1467720209084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1467720209084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="421353000" />
+    <option name="totallyTimeSpent" value="421487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1104,7 +1125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。" />
+    <MESSAGE value="Merge branch 'UpdateBaseHTTP'&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'UpdateBaseHTTP'&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1450,14 +1472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1520,9 +1534,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bean/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="-201">
           <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
