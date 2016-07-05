@@ -26,7 +26,7 @@
             <result>login.html</result>
         </action>
         <action name="register" class="com.action.RegisterAction">
-            <result>register-success.html</result>
+            <result>success.html</result>
         </action>
         <action name="get_tags" class="com.action.GetTagsAction">
             <interceptor-ref name="jsonStack"/>

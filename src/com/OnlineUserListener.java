@@ -1,5 +1,7 @@
 package com;
 
+import com.bean.UserBean;
+
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
@@ -16,6 +18,7 @@ public class OnlineUserListener implements HttpSessionListener {
     public void sessionDestroyed(HttpSessionEvent httpSessionEvent) {
         HttpSession session = httpSessionEvent.getSession();
         if (session.getAttribute(Constants.getUserID()) == null) return;
-        Constants.getOnlineUser().remove(session.getAttribute(Constants.getUserID()));
+        UserBean user = UserBean.getCurrentUser();
+        user.logout();
     }
 }
