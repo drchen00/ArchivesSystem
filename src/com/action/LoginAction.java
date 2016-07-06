@@ -18,6 +18,7 @@ import java.util.Map;
 public class LoginAction {
     private String username;
     private String password;
+    private boolean mobile;
     private String flag = "fail";
     private String errInfo;
 
@@ -61,5 +62,9 @@ public class LoginAction {
             }
         }
         hsession.close();
+    }
+
+    public void setMobile(boolean mobile) {
+        this.mobile = mobile;
     }
 }

@@ -2,18 +2,21 @@ package com.bean;
 
 import com.Constants;
 import com.opensymphony.xwork2.ActionContext;
+import com.webSocket.WebSocket;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by drc on 16-5-3.
+ * 服务器在线用户管理
  */
 public class UserBean {
     private static Map<Integer, UserBean> onlineUser = new HashMap<>();
     private String name;
     private int id;
     private Map<String, Object> session;
+    private WebSocket webSocket;
 
     public UserBean(int id, String name) {
         this.id = id;
@@ -30,6 +33,10 @@ public class UserBean {
     public static UserBean getCurrentUser(){
         Map session = ActionContext.getContext().getSession();
         return onlineUser.get((int) session.get(Constants.getUserID()));
+    }
+
+    public static UserBean getUserByID(int id){
+        return onlineUser.get(id);
     }
 
     public void login(){
@@ -54,5 +61,13 @@ public class UserBean {
 
     public int getId() {
         return id;
+    }
+
+    public void setWebSocket(WebSocket webSocket) {
+        this.webSocket = webSocket;
+    }
+
+    public WebSocket getWebSocket() {
+        return webSocket;
     }
 }

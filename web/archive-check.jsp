@@ -341,7 +341,7 @@
 <!-- Metis core scripts -->
 <script src="assets/js/core.min.js"></script>
 <script>var userID = '<s:property value="#user.id"/>'</script>
-<script src="assets/js/webSocket.js"></script>
+<script src="assets/js/getTagWS.js"></script>
 <script src="assets/js/check.js"></script>
 <script src="assets/js/archivesTable.js"></script>
 </body>

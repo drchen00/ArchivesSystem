@@ -276,6 +276,6 @@
 <script src="assets/js/core.min.js"></script>
 <script src="assets/js/stock.js"></script>
 <script>var userID = '<s:property value="#user.id"/>'</script>
-<script src="assets/js/webSocket.js"></script>
+<script src="assets/js/getTagWS.js"></script>
 </body>
 </html>

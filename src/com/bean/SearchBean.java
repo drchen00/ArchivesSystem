@@ -2,6 +2,7 @@ package com.bean;
 
 /**
  * Created by drc on 16-5-20.
+ * Datatables 请求数据处理相关类
  */
 public class SearchBean {
     private String value;

@@ -5,6 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+    <constant name="struts.action.excludePattern" value="/webSocket/.*,ws://.*"/>
     <package name="json" extends="json-default">
         <interceptors>
             <interceptor-stack name="jsonStack">
@@ -88,19 +89,19 @@
             </result>
         </action>
         <action name="add_archive" class="com.action.AddArchiveAction">
-            <result>archive-stock.jsp</result>
+            <result>success.html</result>
         </action>
         <action name="update_archive" class="com.action.UpdateArchiveAction">
-            <result>archive-query.jsp</result>
+            <result>success.html</result>
         </action>
         <action name="loan_archive" class="com.action.LoanArchiveAction">
-            <result>archive-loan.jsp</result>
+            <result>success.html</result>
         </action>
         <action name="return_archive" class="com.action.ReturnArchiveAction">
-            <result>archive-return.jsp</result>
+            <result>success.html</result>
         </action>
         <action name="destroy_archive" class="com.action.DestroyArchiveAction">
-            <result>archive-destroy.jsp</result>
+            <result>success.html</result>
         </action>
     </package>
 </struts>

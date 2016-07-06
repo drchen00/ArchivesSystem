@@ -5,6 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+    <constant name="struts.action.excludePattern" value="/webSocket/.*,ws://.*"/>
     <package name="json" extends="json-default">
         <interceptors>
             <interceptor-stack name="jsonStack">
