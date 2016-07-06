@@ -61,27 +61,7 @@ $(function () {
         }
     });
 
-    function getTag() {
-        $('div#helpModal p').text("正在获取标签");
-        socket.send(getTagMsg);
-        socket.onmessage = function (event) {
-            var data = JSON.parse(event.data);
-            if (data.success) {
-                var tagNum = $('#tagNum').val(data.data);
-                tagNum.valid();
-            } else {
-                alert('Error:' + data.info + "\n请重试");
-            }
-            $('#helpModal').modal('hide');
-            socket.onmessage = null;
-        };
-    }
-
-    $('input#tagNum+span').click(function () {
-        refresh(getTag);
-    });
-
-    $('div#helpModal button').click(function () {
-        cancel(cancelTag);
-    });
+    socket.onmessage = function (event) {
+        console.log(event.data);
+    };
 });

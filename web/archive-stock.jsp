@@ -199,13 +199,8 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4">标签编号</label>
                                         <div class="col-md-8">
-                                            <div class="col-md-6 input-group">
-                                                <input id="tagNum" name="tagNum" readonly="readonly"
-                                                       class="form-control">
-                                                <span class="input-group-addon">
-                                                    <i class="fa fa-refresh" style="cursor: hand"></i>
-                                                </span>
-                                            </div>
+                                            <input id="tagNum" name="tagNum" readonly="readonly"
+                                                   class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -236,25 +231,6 @@
     <p>2014 &copy; Metis Bootstrap Admin Template</p>
 </footer><!-- /#footer -->
 
-<!-- #helpModal -->
-<div id="helpModal" class="modal fade" data-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">标签获取中</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    这是一个模态框
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">取消获取</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal --><!-- /#helpModal -->
-
 <!--jQuery -->
 <script src="assets/lib/jquery/jquery-2.2.4.min.js"></script>
 <script src="assets/lib/validation/dist/jquery.validate.min.js"></script>
@@ -275,7 +251,6 @@
 <!-- Metis core scripts -->
 <script src="assets/js/core.min.js"></script>
 <script src="assets/js/stock.js"></script>
-<script>var userID = '<s:property value="#user.id"/>'</script>
 <script src="assets/js/getTagWS.js"></script>
 </body>
 </html>

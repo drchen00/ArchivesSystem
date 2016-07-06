@@ -12,13 +12,13 @@ import java.util.Map;
  * 服务器在线用户管理
  */
 public class UserBean {
-    private static Map<Integer, UserBean> onlineUser = new HashMap<>();
+    private static Map<String, UserBean> onlineUser = new HashMap<>();
     private String name;
-    private int id;
+    private String id;
     private Map<String, Object> session;
     private WebSocket webSocket;
 
-    public UserBean(int id, String name) {
+    public UserBean(String id, String name) {
         this.id = id;
         this.name = name;
         session = ActionContext.getContext().getSession();
@@ -26,16 +26,16 @@ public class UserBean {
 
     public UserBean(){
         session = ActionContext.getContext().getSession();
-        id = (int) session.get(Constants.getUserID());
+        id = (String) session.get(Constants.getUserID());
         name = (String) session.get(Constants.getUserName());
     }
 
     public static UserBean getCurrentUser(){
         Map session = ActionContext.getContext().getSession();
-        return onlineUser.get((int) session.get(Constants.getUserID()));
+        return onlineUser.get((String) session.get(Constants.getUserID()));
     }
 
-    public static UserBean getUserByID(int id){
+    public static UserBean getUserByID(String id){
         return onlineUser.get(id);
     }
 
@@ -59,7 +59,7 @@ public class UserBean {
         return name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

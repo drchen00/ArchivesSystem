@@ -8,12 +8,9 @@ package com.action;
 import com.Constants;
 import com.bean.UserBean;
 import com.hibernate.AccountEntity;
-import com.opensymphony.xwork2.ActionContext;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-import java.util.Map;
 
 public class LoginAction {
     private String username;
@@ -53,7 +50,13 @@ public class LoginAction {
             AccountEntity account = (AccountEntity) query.uniqueResult();
             transaction.commit();
             if (account != null) {
-                UserBean user = new UserBean(account.getId(), account.getName());
+                String id;
+                if(mobile){
+                    id = account.getId()+"M";
+                }else {
+                    id = Integer.toString(account.getId());
+                }
+                UserBean user = new UserBean(id, account.getName());
                 user.login();
                 flag = "success";
             } else {

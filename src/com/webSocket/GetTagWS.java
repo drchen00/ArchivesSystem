@@ -2,11 +2,7 @@ package com.webSocket;
 
 import com.Constants;
 import com.bean.UserBean;
-import com.opensymphony.xwork2.ActionContext;
-import org.apache.struts2.ServletActionContext;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.websocket.EndpointConfig;
 import javax.websocket.OnClose;
@@ -27,7 +23,7 @@ public class GetTagWS implements WebSocket {
     public void onOpen(Session session, EndpointConfig cfg){
         this.session = session;
         HttpSession httpSession = (HttpSession) cfg.getUserProperties().get("httpSession");
-        int userID = (int) httpSession.getAttribute(Constants.getUserID());
+        String userID = (String) httpSession.getAttribute(Constants.getUserID());
         System.out.println(userID);
         user = UserBean.getUserByID(userID);
         user.setWebSocket(this);
