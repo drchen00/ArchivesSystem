@@ -6,14 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5888ebe3-0dd8-4f0c-9b41-c1beadcc4dab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ArchivesSystem_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/webSocket/GetTagWS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/webSocket/ServletAwareConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/webSocket/WebSocket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/getTagWS.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/assets/js/webSocket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/webSocket.js" afterPath="" />
+    <list default="true" id="5888ebe3-0dd8-4f0c-9b41-c1beadcc4dab" name="Default" comment="bean部分的部分注释">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/Constants.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/Constants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/action/LoginAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/bean/UserBean.class" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/WEB-INF/classes/com/bean/UserBean.class" />
@@ -29,17 +22,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/archive-stock.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/archive-stock.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/assets/js/success.js" afterPath="$PROJECT_DIR$/out/artifacts/ArchivesSystem_war_exploded/assets/js/success.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArchivesSystem/struts.xml" afterPath="$PROJECT_DIR$/out/production/ArchivesSystem/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/com/action/LoginAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/ColumnBean.java" afterPath="$PROJECT_DIR$/src/com/bean/ColumnBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/OrderBean.java" afterPath="$PROJECT_DIR$/src/com/bean/OrderBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/SearchBean.java" afterPath="$PROJECT_DIR$/src/com/bean/SearchBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/UserBean.java" afterPath="$PROJECT_DIR$/src/com/bean/UserBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/archive-check.jsp" afterPath="$PROJECT_DIR$/web/archive-check.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/archive-destroy.jsp" afterPath="$PROJECT_DIR$/web/archive-destroy.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/archive-loan.jsp" afterPath="$PROJECT_DIR$/web/archive-loan.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/archive-return.jsp" afterPath="$PROJECT_DIR$/web/archive-return.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/archive-stock.jsp" afterPath="$PROJECT_DIR$/web/archive-stock.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/ArchiveStatusBean.java" afterPath="$PROJECT_DIR$/src/com/bean/ArchiveStatusBean.java" />
     </list>
     <ignored path="BoostrapTheme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,8 +81,8 @@
       <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bean/UserBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="195">
+              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1032#1033#0" expanded="true" />
@@ -148,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/action/DestroyArchiveAction.java" />
         <option value="$PROJECT_DIR$/src/com/hibernate/CheckRecordsEntity.java" />
         <option value="$PROJECT_DIR$/web/assets/js/test.js" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
@@ -199,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/com/bean/OrderBean.java" />
         <option value="$PROJECT_DIR$/src/com/bean/SearchBean.java" />
         <option value="$PROJECT_DIR$/src/com/bean/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/com/bean/ArchiveStatusBean.java" />
       </list>
     </option>
   </component>
@@ -1013,7 +996,7 @@
       <workItem from="1467718305758" duration="811000" />
       <workItem from="1467720407493" duration="103000" />
       <workItem from="1467721098664" duration="863000" />
-      <workItem from="1467787935809" duration="13904000" />
+      <workItem from="1467787935809" duration="14791000" />
     </task>
     <task id="LOCAL-00001" summary="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。">
       <created>1467717111302</created>
@@ -1057,11 +1040,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467720458598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bean部分的部分注释。&#10;webSocket类的实现。">
+      <created>1467805731429</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1467805731429</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436223000" />
+    <option name="totallyTimeSpent" value="437110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1145,7 +1135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="用户登陆优化，登陆用户列表以及用户相关写入userbean里。操作执行成功页面实现。" />
     <MESSAGE value="清除注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="清除注释" />
+    <MESSAGE value="bean部分的部分注释。&#10;webSocket类的实现。" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean部分的部分注释。&#10;webSocket类的实现。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1558,14 +1549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bean/ArchiveStatusBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bean/ColumnBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1590,10 +1573,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bean/ArchiveStatusBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bean/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="195">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1032#1033#0" expanded="true" />

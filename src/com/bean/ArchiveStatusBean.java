@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * Created by drc on 16-6-2.
+ * 获得正确权证状态字典
  */
 public class ArchiveStatusBean {
     private Map status;
