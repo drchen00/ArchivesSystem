@@ -32,7 +32,7 @@ public class LoginFilter implements Filter {
             filterChain.doFilter(servletRequest, servletResponse);
             return;
         }
-        if (path.contains("/login.action")) {
+        if (path.contains("login.action")) {
             filterChain.doFilter(servletRequest, servletResponse);
             return;
         }

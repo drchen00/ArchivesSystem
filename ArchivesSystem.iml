@@ -30,26 +30,6 @@
         </configuration>
       </facet>
     </facet>
-    <facet type="web" name="Web2">
-      <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/assets/img/pattern/low_contrast_linen.png" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/web/assets/img/pattern" relative="/WEB-INF" />
-        </webroots>
-      </configuration>
-    </facet>
-    <facet type="web" name="Web3">
-      <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/lib/ognl.jar" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/lib" relative="/WEB-INF" />
-        </webroots>
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
