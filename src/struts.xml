@@ -23,6 +23,14 @@
             <result name="success">index.jsp</result>
             <result name="fail">login.html</result>
         </action>
+        <action name="mobile_login" class="com.action.LoginAction">
+            <result type="json">
+                <param name="root">success</param>
+            </result>
+            <result type="json" name="fail">
+                <param name="root">success</param>
+            </result>
+        </action>
         <action name="logout" class="com.action.LogoutAction">
             <result>login.html</result>
         </action>

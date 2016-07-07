@@ -17,7 +17,7 @@ public class LoginAction {
     private String password;
     private boolean mobile;
     private String flag = "fail";
-    private String errInfo;
+    private boolean success;
 
     public void setUsername(String username) {
         this.username = username;
@@ -27,17 +27,12 @@ public class LoginAction {
         this.password = password;
     }
 
-    public String getErrInfo() {
-        return errInfo;
-    }
-
     public String execute() {
         try {
             idenfication(username, password);
             return flag;
         } catch (Exception e) {
             System.err.print(e);
-            errInfo = e.toString();
             return "error";
         }
     }
@@ -58,9 +53,9 @@ public class LoginAction {
                 }
                 UserBean user = new UserBean(id, account.getName());
                 user.login();
+                success = true;
                 flag = "success";
             } else {
-                errInfo = "用户名密码不匹配";
                 flag = "fail";
             }
         }
@@ -69,5 +64,9 @@ public class LoginAction {
 
     public void setMobile(boolean mobile) {
         this.mobile = mobile;
+    }
+
+    public boolean isSuccess() {
+        return success;
     }
 }
