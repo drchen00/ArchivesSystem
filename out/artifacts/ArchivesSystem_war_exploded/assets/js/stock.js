@@ -63,5 +63,6 @@ $(function () {
 
     socket.onmessage = function (event) {
         console.log(event.data);
+        $('#tagNum').val(event.data);
     };
 });

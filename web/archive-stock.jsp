@@ -199,8 +199,8 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4">标签编号</label>
                                         <div class="col-md-8">
-                                            <input id="tagNum" name="tagNum" readonly="readonly"
-                                                   class="form-control">
+                                            <input id="tagNum" name="tagNum" readonly="readonly" placeholder="请使用手持终端获取标签"
+                                                   class="form-control col-md-6">
                                         </div>
                                     </div>
                                     <div class="form-group">

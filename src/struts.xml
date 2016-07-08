@@ -56,6 +56,11 @@
             <interceptor-ref name="jsonStack"/>
             <result type="json"/>
         </action>
+        <action name="send_tag" class="com.action.SendMobileTagAction">
+            <result type="json">
+                <param name="root">info</param>
+            </result>
+        </action>
         <action name="check_archive_name_existed" class="com.action.validate.CheckArchiveNameExistedAction">
             <result type="json">
                 <param name="root">inexistent</param>

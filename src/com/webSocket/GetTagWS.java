@@ -24,7 +24,6 @@ public class GetTagWS implements WebSocket {
         this.session = session;
         HttpSession httpSession = (HttpSession) cfg.getUserProperties().get("httpSession");
         String userID = (String) httpSession.getAttribute(Constants.getUserID());
-        System.out.println(userID);
         user = UserBean.getUserByID(userID);
         user.setWebSocket(this);
     }
